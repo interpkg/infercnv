@@ -1,0 +1,15 @@
+rscript: '~/software/miniconda3/envs/r442/bin/Rscript'
+ref_gene: '/research/groups/mackgrp/home/common/Databases/human_genome/GRCh38_gencode_v32/gtf/grch38_gencode_v32.filtered.txt'
+
+rds: 'sc_celltype_anno.rds'
+meta: 'out_celltype/metaData.cellType.xls'
+assay: 'RNA'
+form: 'sample'
+ctl: 'Microglia,Immune'
+samples: 'H_09_2459,H_09_2461,H_15_4174,H_16_05327,H_93_0050,H_99_0398'
+outdir: 'out_infercnv.zr'
+
+cnv_model: 'hmm'
+ref_group: 'Control'
+sd_amp: 2
+cutoff: 0.1
