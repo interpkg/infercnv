@@ -1,0 +1,25 @@
+# 2025-06-23 v0.3
+
+input:
+  meta: '../out_celltype/metaData.cellType.xls'
+  ctl: 'Microglia,Immune'
+
+out:
+  outdir: 'out_malignant_cells'
+
+data:
+  icnv_exp: 'final_infercnv.exp_data.rds'
+  hmm_gene: 'HMM_CNV_predictions.HMMi6.hmm_mode-samples.Pnorm_0.5.pred_cnv_genes.dat'
+  hmm_region: 'HMM_CNV_predictions.HMMi6.hmm_mode-samples.Pnorm_0.5.pred_cnv_regions.dat'
+
+
+parameter:
+  min_region: 5
+  min_ratio: 0.5
+  min_cnv: 100
+  min_gene: 20
+  cutoff_gain: 1.15
+  cutoff_loss: 0.85
+  rm_clu: 'na'
+  rm_chr: 'na'
+
