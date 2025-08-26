@@ -1,0 +1,15 @@
+rscript: '~/software/miniconda3/envs/r442/bin/Rscript'
+ref_gene: '/research/groups/mackgrp/home/common/Databases/mouse_genome/GRCm38_gencode_vM23/gtf/mm10_gencode_vM23.filtered.txt'
+
+rds: 'multiome_integrated.plus.rds'
+assay: 'RNA'
+ctl: '0,4,9,17,21,22'
+omit: ''
+group: 'cluster'
+samples: '3,14'
+outdir: 'out_infercnv.clus_ym'
+
+cnv_model: 'hmm'
+ref_group: 'Control'
+sd_amp: 2
+cutoff: 0.1
